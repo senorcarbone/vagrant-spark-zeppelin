@@ -1,16 +1,15 @@
-#Vagrant + Spark + Zeppelin a Toolbox to the Data Analyst
-
-##EDIT (Sep 12): This example also includes Cassandra now!
+#Vagrant Zeppelics
+#A VM Configuration for Interactively Programming Distributed Systems with Kompics and Zeppelin
 
 ##Instructions
-A step by step guide is available with the blog post: [Vagrant + Spark + Zeppelin a Toolbox to the Data Analyst](http://arjon.es/2015/08/23/vagrant-spark-zeppelin-a-toolbox-to-the-data-analyst/)
+TBD
 
 ##Acknowledge
-This is an installation of Apache Spark and Apache Zeppelin based on Debian [debian/jessie64](https://atlas.hashicorp.com/debian/boxes/jessie64)
-`bootstrap.sh` was inspired by [gettyimages/docker-spark](https://github.com/gettyimages/docker-spark)
+The setup is based on https://github.com/arjones/vagrant-spark-zeppelin
 
-###Examples Datasets
-There are a few datasets [available here](./data/).
+##Examples
+TBD
 
-##I'm looking for more datasets, if you want to donate yours please [reach out](https://twitter.com/arjones)
+###Assignments
+TBD
 
