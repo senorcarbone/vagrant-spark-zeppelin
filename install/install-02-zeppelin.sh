@@ -18,7 +18,7 @@ wget -c "http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/
 tar zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz -C /usr/
 ln -s ${MAVEN_HOME} /usr/maven
 
-git clone https://github.com/senorcarbone/incubator-zeppelin/tree/zepelics.git ${ZEPPELIN_HOME} 
+git clone https://github.com/senorcarbone/incubator-zeppelin/tree/zeppelics.git ${ZEPPELIN_HOME} 
 
 cd ${ZEPPELIN_HOME}
 # go to a commit I tested and builds correctly
