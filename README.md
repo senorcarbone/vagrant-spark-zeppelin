@@ -1,15 +1,12 @@
 #Zeppelics
-#A VM Configuration for Interactively Programming Distributed Systems with Kompics and Zeppelin
+#Interactive Distributed Algorithms with Zeppelin and Kompics
 
 ##Instructions
 TBD
 
-##Acknowledge
-The setup is based on https://github.com/arjones/vagrant-spark-zeppelin
-
 ##Examples
 TBD
 
-###Assignments
-TBD
+##Credits
+The setup is based on https://github.com/arjones/vagrant-spark-zeppelin
 
