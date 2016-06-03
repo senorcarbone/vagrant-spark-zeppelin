@@ -1,4 +1,4 @@
-#Vagrant Zeppelics
+#Zeppelics
 #A VM Configuration for Interactively Programming Distributed Systems with Kompics and Zeppelin
 
 ##Instructions
