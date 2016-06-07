@@ -32,7 +32,7 @@ export ZEPPELIN_JAVA_OPTS="-Dspark.home=/usr/spark"
 CONF
 
 echo "Copying Example Notebooks ..."
-cp -vR /vagrant/examples/* /usr/zeppelin/examples/
+cp -vR /vagrant/examples/* /usr/zeppelin/notebook/
 
 ln -s ${ZEPPELIN_HOME}/bin/zeppelin-daemon.sh /etc/init.d/
 update-rc.d zeppelin-daemon.sh defaults
