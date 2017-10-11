@@ -31,7 +31,7 @@ cd ${ZEPPELIN_HOME}
 # ${MAVEN_HOME}/bin/mvn clean package -DskipTests
 
 tar xzvf zeppelin.tar.gz --strip 1
-
+rm zeppelin.tar.gz
 # cat > ${ZEPPELIN_HOME}/conf/zeppelin-env.sh <<CONF
 # export ZEPPELIN_MEM="-Xmx1024m"
 # CONF
