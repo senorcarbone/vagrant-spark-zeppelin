@@ -15,33 +15,25 @@ mkdir $ZEPPELIN_HOME
 
 ln -fs /usr/bin/nodejs /usr/bin/node
 
-# wget -c "http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz"
-#tar zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz -C /usr/
-#ln -s ${MAVEN_HOME} /usr/maven
+wget -c "http://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz"
+tar zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz -C /usr/
+ln -s ${MAVEN_HOME} /usr/maven
 
-#git clone https://github.com/senorcarbone/incubator-zeppelin.git ${ZEPPELIN_HOME} 
-
-cp -vR /opt/zeppelin/* /usr/zeppelin/
+cp -rT /opt/zeppelin /usr/zeppelin
 cd ${ZEPPELIN_HOME}
-# git fetch
-# git checkout zeppelics
 
 #${MAVEN_HOME}/bin/mvn clean package -Pspark-1.4 -Dhadoop.version=2.4.0 -Phadoop-2.4 -DskipTests
 
-# ${MAVEN_HOME}/bin/mvn clean package -DskipTests
+${MAVEN_HOME}/bin/mvn clean package -Dcheckstyle.skip -Drat.skip=true -DskipTests
 
-tar xzvf zeppelin.tar.gz --strip 1
-rm zeppelin.tar.gz
-# cat > ${ZEPPELIN_HOME}/conf/zeppelin-env.sh <<CONF
-# export ZEPPELIN_MEM="-Xmx1024m"
-# CONF
+#cat > ${ZEPPELIN_HOME}/conf/zeppelin-env.sh <<CONF
+#export ZEPPELIN_MEM="-Xmx1024m"
+#CONF
 
 # echo "Copying Example Notebooks ..."
 # cp -vR /vagrant/examples/* /usr/zeppelin/notebook/
 
 ln -s ${ZEPPELIN_HOME}/bin/zeppelin-daemon.sh /etc/init.d/
 update-rc.d zeppelin-daemon.sh defaults
-
 echo "Starting Zeppelin..."
-
 /etc/init.d/zeppelin-daemon.sh start
